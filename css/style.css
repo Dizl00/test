@@ -1,0 +1,236 @@
+body{
+	margin: 0;
+	font-family: calibri;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+h1, p, a{
+	color: #151516;
+}
+
+nav{
+	display: flex;
+	height: 100px;
+	box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.09);
+}
+
+h1{
+	font-weight: 700;
+	font-size: 48px;
+}
+
+h2{
+	font-weight: 700;
+	font-size: 24px;
+}
+
+li{
+	display: flex;
+    list-style-type: none;
+    line-height: 1.6;
+}
+
+li:before {
+    color: red;
+    content: "•";
+    padding-right: 7px;
+}
+
+/*Header Section*/
+.logo{
+	display: flex;
+	align-items: center;
+	padding: 0 6rem;
+}
+
+.logo-img{
+	width: auto;
+	height: 84px;
+/*	margin-right: auto;*/
+}
+
+.header-info{
+	display: flex;
+	margin-left: auto;
+	
+}
+
+.header-info-item{
+	padding: 0 5rem;
+
+	display: flex;
+	align-items: center;
+	
+	color: #6B7073;
+}
+
+.work-time-list{
+	display: flex;
+}
+.work-time-list-text{
+	display: flex;
+	align-items: start;
+}
+
+/*Search Form*/
+.search{
+	position: relative;
+}
+
+.searchbar {
+  width: 16.75rem;
+  height: 2.5rem;
+
+  padding: 0 0 0 14px;
+
+  border: none;
+  outline: none;
+  border-radius: 5rem;
+  box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.17);
+}
+.button {
+	height: 2rem;
+	position: absolute;
+	top: 2rem;
+	right: 6rem;
+}
+
+/*Breadcrumb Navigation*/
+
+.breadcrumb {
+    padding: 1.7rem 6rem;
+	color: #6B7073;
+
+
+}
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: ">";
+}
+
+.breadcrumb-parents-text{
+	font-size: 14px;
+	
+	text-decoration: none;
+
+	color: #C4C4C4;
+}
+
+/*Feture Section*/
+
+.feture{
+	display: flex;
+	margin-right: 5rem;
+}
+
+.feture-img {
+	width: 72.75rem;
+	height: auto;
+	margin: 0 1.7rem 0 6rem;
+}
+
+/*Feture Description*/
+
+.desc h1{
+	margin: 0 0 2.5rem;
+}
+.desc p{
+	font-size: 14px;
+	margin: 0 0 3rem;
+}
+
+/*Feture Download Presentation*/
+
+.presentation {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 4rem;
+}
+
+.presentation a{
+	display: flex;
+	align-items: center;
+
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.presentation a img{
+	margin-left: 1rem;	
+}
+
+/*Feture List*/
+
+.feture-list-items{
+	padding: 0;
+}
+
+/*Resters*/
+
+.renters{
+	margin: 5rem 6rem;
+}
+.renters-body{
+	display: flex;
+}
+
+/* Carousel */
+
+.carousel{
+	position: relative;	
+}
+.carousel-container{
+	width: 64rem;
+	height: 13rem;
+	overflow: hidden;
+}
+
+.swiper-slide .swiper-slide-item{
+	margin: 0 46px;
+}
+.swiper-navigation-container{
+	position: relative;
+}
+.swiper-navigation-container img{
+	width: 43px;
+	height: 14px;
+}
+
+.swiper-button-prev{
+	--swiper-navigation-size:0;
+	position: absolute;
+	top: -22px;
+	left: 428px;
+}
+.swiper-button-next{
+	--swiper-navigation-size:0;
+	position: absolute;
+	top: -22px;
+	left: 554px;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+	opacity: 1;
+}
+
+.swiper-pagination-bullet{
+	width: 6px;
+	height: 6px;
+}
+.swiper-pagination-bullet-active {
+	width: 9px;
+	height: 9px;
+	background: #6B7073;
+}
